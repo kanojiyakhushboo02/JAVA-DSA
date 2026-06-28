@@ -29,17 +29,7 @@ public static void printReverseNumber(int i, int n){
     System.out.print(" " + i);
 }
 
-public static void printSum(int n){
-    int i=1;
-    int sum=0;
-    if(i<=n){
-        sum += i;
-        i++;
-    }else{
-        return;
-    }
-    System.out.println(sum);
-}
+
 
 
 public static int factorial(int  n){
@@ -57,6 +47,13 @@ public static int printFibbo(int n){
     return printFibbo(n-1) + printFibbo(n-2);
 }
 
+public static int printSum(int n){
+    if(n==1){
+        return n;
+    }
+    return n + printSum(n-1);
+}
+
     public static void main(String args[]){
         int i =0; 
         int n = 5;
@@ -69,8 +66,11 @@ public static int printFibbo(int n){
         // int res = factorial(5);
         // System.out.println(res);
         
-        int result = printFibbo( n);
-        System.out.println(result);
+        // int result = printFibbo( n);
+        // System.out.println(result);
+
+        int Sum = printSum(n);
+        System.out.println(Sum);
 
     }
 }
