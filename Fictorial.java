@@ -54,6 +54,14 @@ public static int printSum(int n){
     return n + printSum(n-1);
 }
 
+
+public static int power(int x, int n){
+    if(n==0){
+        return 1;
+    }
+    return x * power(x,n-1);
+}
+
     public static void main(String args[]){
         int i =0; 
         int n = 5;
@@ -69,8 +77,12 @@ public static int printSum(int n){
         // int result = printFibbo( n);
         // System.out.println(result);
 
-        int Sum = printSum(n);
-        System.out.println(Sum);
+        // int Sum = printSum(n);
+        // System.out.println(Sum);
 
+        int x = 2;
+        
+        int p = power(x,n);
+        System.out.print(p);
     }
 }
