@@ -72,7 +72,7 @@ class MergeTwoLl{
     public static void main(String[] args) {
 
         // First sorted list:
-        // 1 → 3 → 5
+        // 1 -> 3 ->   5
         ListNode list1 = new ListNode(1);
         list1.next = new ListNode(3);
         list1.next.next = new ListNode(5);
@@ -89,4 +89,5 @@ class MergeTwoLl{
         // Print result
         printList(result);
     }
-}
+} 
+
