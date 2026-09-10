@@ -80,5 +80,6 @@ public class CircularQ {
             System.out.println(arr[i]);
         }
         System.out.println(q.peek()  + "peek");
+        
     }
 }
